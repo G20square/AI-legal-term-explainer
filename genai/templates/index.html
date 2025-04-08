@@ -199,7 +199,7 @@
                 .then(response => response.text())
                 .then(botReply => {
                     thinkingMessage.style.display = 'none';
-                    appendBotMessage(botReply); // Call the function to add bot's message
+                    appendBotMessage(botReply);
                     chatContainer.scrollTop = chatContainer.scrollHeight;
                 })
                 .catch(error => {
@@ -229,7 +229,7 @@
         function appendBotMessage(message) {
             const messageDiv = document.createElement('div');
             messageDiv.classList.add('bot-message');
-            messageDiv.textContent = message; // Directly set the text content
+            messageDiv.textContent = message; 
             chatContainer.appendChild(messageDiv);
         }
     </script>
